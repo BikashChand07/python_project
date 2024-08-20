@@ -1,3 +1,5 @@
+import sqlite3
+import csv
 #git comfig --global user.name "username"
 # git config --global user.email "yourmail@gmail.com"
 
@@ -19,8 +21,7 @@
 #git commit -m "your commit message"
 #git push origin
 
-import sqlite3
-import csv
+
 def create_connection():
     try:
         con = sqlite3.connect("users.sqlite3")
